@@ -15,7 +15,7 @@ npm install vcards-js --save
 
 ## Usage
 
-Below is a simple example of how to create a basic vCard and how to save it to a file, or view its contents from the console.
+Below is a simple example of how to create a basic vCard, or view its contents from the console.
 
 ### Basic vCard
 
@@ -36,9 +36,6 @@ vCard.birthday = new Date('01-01-1985');
 vCard.title = 'Software Developer';
 vCard.url = 'https://github.com/enesser';
 vCard.note = 'Notes on Eric';
-
-//save to file
-vCard.saveToFile('./eric-nesser.vcf');
 
 //get as formatted string
 console.log(vCard.getFormattedString());
@@ -181,9 +178,6 @@ vCard.photo.embedFromFile('photo.jpg');
 vCard.logo.embedFromFile('logo.jpg');
 
 vCard.version = '3.0'; //can also support 2.1 and 4.0, certain versions only support certain fields
-
-//save to file
-vCard.saveToFile('./eric-nesser.vcf');
 
 //get as formatted string
 console.log(vCard.getFormattedString());
